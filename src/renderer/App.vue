@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <Counter></Counter>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'desk-counter'
+import Counter from '@/components/Counter'
+export default {
+  name: 'desk-counter',
+  components: {
+    Counter
   }
+}
 </script>
 
 <style>
